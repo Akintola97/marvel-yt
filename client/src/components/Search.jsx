@@ -17,7 +17,7 @@ const Search = () => {
   const handleSubmit = async(e) =>{
     e.preventDefault();
 
-    const sendData = await axios.post('http://localhost:5000', {character})
+    const sendData = await axios.post('https://marvel-yt-app.onrender.com', {character})
     setCharacterData(sendData.data)
     console.log(characterData)
 
