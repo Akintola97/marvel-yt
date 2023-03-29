@@ -21,7 +21,7 @@ const About = () => {
    
   useEffect(()=>{
     const fetchData = async() =>{
-     const response = await axios.post('https://marvel-yt-app.onrender.com', {id})
+     const response = await axios.post('https://marvel-yt-app.onrender.com/characterinfo', {id})
     setAboutData(response.data.data)
     }
     fetchData()

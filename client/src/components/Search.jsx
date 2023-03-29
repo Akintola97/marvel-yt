@@ -19,7 +19,6 @@ const Search = () => {
 
     const sendData = await axios.post('https://marvel-yt-app.onrender.com', {character})
     setCharacterData(sendData.data)
-    console.log(characterData)
 
   }
   
