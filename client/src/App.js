@@ -9,7 +9,7 @@ function App() {
   return (
     <div>
       <Routes>
-      <Route path = {'/marvel-app'} element={<Home />} />
+      <Route path = {'/marvel'} element={<Home />} />
       <Route path = {'/:id'} element={<About />} />
       </Routes>
     

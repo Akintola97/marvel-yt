@@ -27,7 +27,7 @@ const Search = () => {
     <div>
     <form onSubmit={handleSubmit}>
     <div className='w-full h-full text-center p-5 cursor-pointer text-white'>
-   <Link to = '/marvel-app' onClick={pageRefresh}><h1 className="p-5 text-[7.5vmin] font-bold cursor-pointer text-white">MARVEL CHARACTERS</h1></Link>
+   <Link to = '/marvel' onClick={pageRefresh}><h1 className="p-5 text-[7.5vmin] font-bold cursor-pointer text-white">MARVEL CHARACTERS</h1></Link>
    
    
     <input className='border border-white rounded-md' onChange={e=>setCharacter(e.target.value)} type='text' required />

@@ -1,8 +1,8 @@
 const express = require('express');
 const app = express();
 require('dotenv').config();
-const port = process.env.PORT||5000; 
-const hostname = 'localhost'
+const port = process.env.PORT||10000; 
+
 
 const cors = require('cors')
 const crypto = require('crypto')
@@ -23,8 +23,8 @@ const hash = crypto.createHash('md5').update(ts+privateKey+publicKey).digest('he
 
 
 
-app.listen(port, hostname, ()=>{
-    console.log(`The server is running on ${hostname}${port}`)
+app.listen(port, ()=>{
+    console.log(`The server is running on ${port}`)
     
 })
 
